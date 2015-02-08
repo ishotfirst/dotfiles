@@ -1,0 +1,5 @@
+#!/usr/bin/env zsh
+
+echo $fg[red]Updating system...$reset_color
+brew update && brew upgrade
+~/bin/npm-upgrade.sh

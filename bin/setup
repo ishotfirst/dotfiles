@@ -1,0 +1,29 @@
+#!/bin/bash
+
+# Setup Symlinks
+[ -h ~/.aliases ] && unlink ~/.aliases
+[ -f ~/src/dotfiles/.aliases ] && ln -s ~/src/dotfiles/.aliases ~/.aliases
+
+[ -h ~/.npmrc ] && unlink ~/.npmrc
+[ -f ~/src/dotfiles/.npmrc ] && ln -s ~/src/dotfiles/.npmrc ~/.npmrc
+
+[ -h ~/.editorconfig ] && unlink ~/.editorconfig
+[ -f ~/src/dotfiles/.editorconfig ] && ln -s ~/src/dotfiles/.editorconfig ~/.editorconfig
+
+[ -h ~/.gitconfig ] && unlink ~/.gitconfig
+[ -f ~/src/dotfiles/.gitconfig ] && ln -s ~/src/dotfiles/.gitconfig ~/.gitconfig
+
+[ -h ~/.gitignore_global ] && unlink ~/.gitignore_global
+[ -f ~/src/dotfiles/.gitignore_global ] && ln -s ~/src/dotfiles/.gitignore_global ~/.gitignore_global
+
+[ -h ~/.jshintrc ] && unlink ~/.jshintrc
+[ -f ~/src/dotfiles/.jshintrc ] && ln -s ~/src/dotfiles/.jshintrc ~/.jshintrc
+
+[ -h ~/.zshrc ] && unlink ~/.zshrc
+[ -f ~/src/dotfiles/.zshrc ] && ln -s ~/src/dotfiles/.zshrc ~/.zshrc
+
+[ -h ~/bin ] && unlink ~/bin
+[ -d ~/src/dotfiles/bin ] && ln -s ~/src/dotfiles/bin ~/
+
+[ -h ~/.naiad ] && unlink ~/.naiad
+[ -d ~/src/dotfiles/naiad ] && ln -s ~/src/dotfiles/naiad ~/.naiad

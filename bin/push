@@ -1,0 +1,15 @@
+#!/bin/bash
+
+NAIAD_DEVEL=$(cat ~/.naiad/.devel)
+NAIAD_LOCAL=$(cat ~/.naiad/.local)
+NAIAD_DIRECTORY=$(pwd | sed -e "s|$HOME|~|")
+
+if $NAIAD_LOCAL; then
+  if [[ $1 ]]; then
+    for FILE in "$@"; do
+      scp "./$FILE" "$NAIAD_DEVEL:$NAIAD_DIRECTORY/$FILE" > /dev/null
+    done
+  else
+    rsync -quaz ./ $NAIAD_DEVEL:$NAIAD_DIRECTORY/ --exclude '.git'
+  fi
+fi

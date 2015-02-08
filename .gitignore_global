@@ -1,0 +1,6 @@
+*~
+.DS_Store
+.devel
+.proxy
+.servers
+.npmrc
