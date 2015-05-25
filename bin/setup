@@ -19,6 +19,9 @@
 [ -h ~/.jshintrc ] && unlink ~/.jshintrc
 [ -f ~/src/dotfiles/.jshintrc ] && ln -s ~/src/dotfiles/.jshintrc ~/.jshintrc
 
+[ -h ~/.jscsrc ] && unlink ~/.jscsrc
+[ -f ~/src/dotfiles/.jscsrc ] && ln -s ~/src/dotfiles/.jscsrc ~/.jscsrc
+
 [ -h ~/.eslintrc ] && unlink ~/.eslintrc
 [ -f ~/src/javascript/linters/.eslintrc ] && ln -s ~/src/javascript/linters/.eslintrc ~/.eslintrc
 
