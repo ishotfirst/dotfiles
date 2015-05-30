@@ -1,6 +1,43 @@
 #!/bin/bash
 
-# Setup Symlinks
+# Install common software
+
+# Homebrew
+[ -f /usr/local/bin/brew ] || ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+
+BREWS=\
+colordiff \
+flow \
+git \
+libsass \
+mongodb \
+node \
+openssl \
+readline \
+ruby \
+sassc \
+zsh
+[ -f /usr/local/bin/brew ] brew install $BREWS
+
+# Node
+NPM_MODULES=\
+babel \
+babel-eslint \
+bower \
+eslint \
+eslint-plugin-react \
+grunt-cli \
+jscs \
+jshint \
+npm \
+phantomjs \
+pure-prompt \
+uglify-js
+[ -d $NODE_PATH ] npm install -g $NPM_MODULES
+
+[ -d ~/.oh-my-zsh ] || curl -L https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh | sh
+
+# Setup root Symlinks
 [ -h ~/.aliases ] && unlink ~/.aliases
 [ -f ~/src/dotfiles/.aliases ] && ln -s ~/src/dotfiles/.aliases ~/.aliases
 
@@ -33,3 +70,23 @@
 
 [ -h ~/.naiad ] && unlink ~/.naiad
 [ -d ~/src/dotfiles/naiad ] && ln -s ~/src/dotfiles/naiad ~/.naiad
+
+# Setup ST3 Symlinks
+[ -h ~/Library/Application\ Support/Sublime\ Text\ 3/Packages/naiad ] && unlink ~/Library/Application\ Support/Sublime\ Text\ 3/Packages/naiad
+[ -d ~/src/dotfiles/naiad ] && ln -s ~/src/dotfiles/naiad ~/Library/Application\ Support/Sublime\ Text\ 3/Packages/naiad
+
+[ -h ~/Library/Application\ Support/Sublime\ Text\ 3/Packages/User/Default\ \(OSX\).sublime-keymap ] && unlink ~/Library/Application\ Support/Sublime\ Text\ 3/Packages/User/Default\ \(OSX\).sublime-keymap
+[ -d ~/src/dotfiles/User/Default\ \(OSX\).sublime-keymap ] && ln -s ~/src/dotfiles/User/Default\ \(OSX\).sublime-keymap ~/Library/Application\ Support/Sublime\ Text\ 3/Packages/User/Default\ \(OSX\).sublime-keymap
+
+[ -h ~/Library/Application\ Support/Sublime\ Text\ 3/Packages/User/Preferences.sublime-settings ] && unlink ~/Library/Application\ Support/Sublime\ Text\ 3/Packages/User/Preferences.sublime-settings
+[ -d ~/src/dotfiles/User/Preferences.sublime-settings ] && ln -s ~/src/dotfiles/User/Preferences.sublime-settings ~/Library/Application\ Support/Sublime\ Text\ 3/Packages/User/Preferences.sublime-settings
+
+# Setup Oh My Zsh Symlinks
+[ -h ~/.oh-my-zsh/custom/async.zsh ] && unlink ~/.oh-my-zsh/custom/async.zsh
+[ -d $NODE_PATH/pure-prompt/async.zsh ] && ln -s $NODE_PATH/pure-prompt/async.zsh ~/.oh-my-zsh/custom/async.zsh
+
+[ -h ~/.oh-my-zsh/custom/pure.zsh ] && unlink ~/.oh-my-zsh/custom/pure.zsh
+[ -d $NODE_PATH/pure-prompt/pure.zsh ] && ln -s $NODE_PATH/pure-prompt/pure.zsh ~/.oh-my-zsh/custom/pure.zsh
+
+[ -h ~/.oh-my-zsh/custom/plugins/naiad ] && unlink ~/.oh-my-zsh/custom/plugins/naiad
+[ -d ~/src/dotfiles/zsh/naiad ] && ln -s ~/src/dotfiles/zsh/naiad ~/.oh-my-zsh/custom/plugins/naiad
