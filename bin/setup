@@ -80,13 +80,3 @@ uglify-js
 
 [ -h ~/Library/Application\ Support/Sublime\ Text\ 3/Packages/User/Preferences.sublime-settings ] && unlink ~/Library/Application\ Support/Sublime\ Text\ 3/Packages/User/Preferences.sublime-settings
 [ -d ~/src/dotfiles/User/Preferences.sublime-settings ] && ln -s ~/src/dotfiles/User/Preferences.sublime-settings ~/Library/Application\ Support/Sublime\ Text\ 3/Packages/User/Preferences.sublime-settings
-
-# Setup Oh My Zsh Symlinks
-[ -h ~/.oh-my-zsh/custom/async.zsh ] && unlink ~/.oh-my-zsh/custom/async.zsh
-[ -d $NODE_PATH/pure-prompt/async.zsh ] && ln -s $NODE_PATH/pure-prompt/async.zsh ~/.oh-my-zsh/custom/async.zsh
-
-[ -h ~/.oh-my-zsh/custom/pure.zsh ] && unlink ~/.oh-my-zsh/custom/pure.zsh
-[ -d $NODE_PATH/pure-prompt/pure.zsh ] && ln -s $NODE_PATH/pure-prompt/pure.zsh ~/.oh-my-zsh/custom/pure.zsh
-
-[ -h ~/.oh-my-zsh/custom/plugins/naiad ] && unlink ~/.oh-my-zsh/custom/plugins/naiad
-[ -d ~/src/dotfiles/zsh/naiad ] && ln -s ~/src/dotfiles/zsh/naiad ~/.oh-my-zsh/custom/plugins/naiad

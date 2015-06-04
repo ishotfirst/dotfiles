@@ -6,7 +6,7 @@ ZSH=$HOME/.oh-my-zsh
 # Optionally, if you set this to "random", it'll load a random theme each
 # time that oh-my-zsh is loaded.
 # ZSH_THEME="sunrise"
-ZSH_THEME="pure"
+# ZSH_THEME="pure"
 
 # Example aliases
 alias zshconfig="subl ~/.zshrc"
@@ -40,3 +40,6 @@ export PATH=$HOME/bin:/usr/local/fci/bin:/usr/local/opt/ruby/bin:/usr/local/bin:
 export NODE_PATH=/usr/local/lib/node_modules
 
 source $HOME/.aliases
+
+autoload -U promptinit && promptinit
+prompt pure
