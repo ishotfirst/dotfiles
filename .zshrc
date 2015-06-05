@@ -41,5 +41,7 @@ export NODE_PATH=/usr/local/lib/node_modules
 
 source $HOME/.aliases
 
+fpath+=("/usr/local/share/zsh/site-functions")
+
 autoload -U promptinit && promptinit
 prompt pure
