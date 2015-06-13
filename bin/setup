@@ -3,39 +3,39 @@
 # Install common software
 
 # Homebrew
-[ -f /usr/local/bin/brew ] || ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+# [ -f /usr/local/bin/brew ] || ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 
-BREWS=\
-colordiff \
-flow \
-git \
-libsass \
-mongodb \
-node \
-openssl \
-readline \
-ruby \
-sassc \
-zsh
-[ -f /usr/local/bin/brew ] brew install $BREWS
+# BREWS=\
+# colordiff \
+# flow \
+# git \
+# libsass \
+# mongodb \
+# node \
+# openssl \
+# readline \
+# ruby \
+# sassc \
+# zsh
+# [ -f /usr/local/bin/brew ] brew install $BREWS
 
-# Node
-NPM_MODULES=\
-babel \
-babel-eslint \
-bower \
-eslint \
-eslint-plugin-react \
-grunt-cli \
-jscs \
-jshint \
-npm \
-phantomjs \
-pure-prompt \
-uglify-js
-[ -d $NODE_PATH ] npm install -g $NPM_MODULES
+# # Node
+# NPM_MODULES=\
+# babel \
+# babel-eslint \
+# bower \
+# eslint \
+# eslint-plugin-react \
+# grunt-cli \
+# jscs \
+# jshint \
+# npm \
+# phantomjs \
+# pure-prompt \
+# uglify-js
+# [ -d $NODE_PATH ] npm install -g $NPM_MODULES
 
-[ -d ~/.oh-my-zsh ] || curl -L https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh | sh
+# [ -d ~/.oh-my-zsh ] || curl -L https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh | sh
 
 # Setup root Symlinks
 [ -h ~/.aliases ] && unlink ~/.aliases
