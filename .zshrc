@@ -41,6 +41,8 @@ export NODE_PATH=/usr/local/lib/node_modules
 
 source $HOME/.aliases
 
+. `brew --prefix`/etc/profile.d/z.sh
+
 fpath+=("/usr/local/share/zsh/site-functions")
 
 autoload -U promptinit && promptinit
