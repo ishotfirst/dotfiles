@@ -54,7 +54,7 @@ use()
   if [ $1 ]; then
     server=$1
   else
-    server=$web
+    server=$default
   fi
 
   # If this looks like a domain, use the raw input,
