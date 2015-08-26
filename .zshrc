@@ -34,10 +34,8 @@ plugins=(git naiad)
 
 source $ZSH/oh-my-zsh.sh
 
-export FLEX_PATH=$HOME/Documents/Apache\ Flex/bin
-
 # Customize to your needs...
-export PATH=$HOME/bin:$FLEX_PATH:/usr/local/fci/bin:/usr/local/opt/ruby/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin
+export PATH=$HOME/bin:/usr/local/fci/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin
 
 export NODE_PATH=/usr/local/lib/node_modules
 
