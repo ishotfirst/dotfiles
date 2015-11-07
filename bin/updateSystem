@@ -2,4 +2,4 @@
 
 echo $fg[red]Updating system...$reset_color
 brew update && brew upgrade --all && brew cleanup
-~/bin/npm-upgrade.sh
+npm -g update
