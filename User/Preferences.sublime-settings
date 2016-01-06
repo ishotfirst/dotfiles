@@ -1,11 +1,4 @@
 {
-	"Seti_ClosedFolder_dots": true,
-	"Seti_ClosedFolder_remove": true,
-	"Seti_ClosedFolder_same": true,
-	"Seti_mouse_wheel_tabswitche": true,
-	"Seti_no_bar_undertabs": true,
-	"Seti_tabs_med": true,
-	"Seti_tabs_small": true,
 	"always_show_minimap_viewport": true,
 	"auto_complete_commit_on_tab": true,
 	"bold_folder_labels": true,
