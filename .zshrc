@@ -47,3 +47,5 @@ fpath+=("/usr/local/share/zsh/site-functions")
 
 autoload -U promptinit && promptinit
 prompt pure
+
+test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"

@@ -5,7 +5,6 @@ NAIAD_LOCAL=$(cat ~/.naiad/.local)
 
 NAIAD_LOCAL_DIRECTORY=$(pwd)
 NAIAD_REMOTE_DIRECTORY=$(pwd | sed -e "s|$HOME|~|")
-NAIAD_CLIENT_JS_DIRECTORY='~/src/naiad.client.js'
 
 NAIAD_INSTALL='kitty install -r .'
 POST_INSTALL_COMMAND=''
@@ -47,37 +46,9 @@ if [[ $1 ]]; then
         php -l $FILE || exit $?
         ;;
 
-      # JavaScript
-      js)
-        if [[ $NAIAD_REMOTE_DIRECTORY =~ $NAIAD_CLIENT_JS_DIRECTORY ]]; then
-          grunt --no-color --debug-only
-
-          eval DIR=$NAIAD_CLIENT_JS_DIRECTORY/dist
-
-          NAIAD_LOCAL_DIRECTORY=$DIR
-          NAIAD_REMOTE_DIRECTORY=$(echo $DIR | sed -e "s|$HOME|~|")
-
-          # Add the clients to the install list
-          LIST+=( `ls $DIR | grep debug` )
-
-          # Remove the original file
-          LIST=( ${LIST[@]/$FILE/} )
-
-        fi
-        ;;
-
     esac
   done
   NAIAD_INSTALL="kitty install ${LIST[@]}"
-else
-  if [[ $NAIAD_REMOTE_DIRECTORY =~ '~/src/naiad.client.js' ]]; then
-    grunt
-    eval DIR=$NAIAD_CLIENT_JS_DIRECTORY/dist
-
-    NAIAD_LOCAL_DIRECTORY=$DIR
-    NAIAD_REMOTE_DIRECTORY=$(echo $DIR | sed -e "s|$HOME|~|")
-
-  fi
 fi
 
 if $NAIAD_LOCAL; then
