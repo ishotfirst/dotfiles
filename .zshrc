@@ -35,7 +35,7 @@ plugins=(git naiad)
 source $ZSH/oh-my-zsh.sh
 
 # Customize to your needs...
-export PATH=$HOME/bin:/usr/local/fci/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin
+export PATH=$HOME/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin
 
 export NODE_PATH=/usr/local/lib/node_modules
 

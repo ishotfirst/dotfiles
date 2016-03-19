@@ -31,3 +31,7 @@ alias glola='git lola'
 alias glom='git lom'
 alias gff='git ff'
 alias grh='git rh'
+
+# npm
+alias npmw='npm config set registry https://npm.accretivetg.com'
+alias npmh='npm config set registry https://registry.npmjs.org'
