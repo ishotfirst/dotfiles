@@ -6,33 +6,22 @@
 # [ -f /usr/local/bin/brew ] || ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 
 # BREWS=\
+# ant \
+# brew-cask \
 # colordiff \
-# flow \
 # git \
-# libsass \
-# mongodb \
-# node \
+# node4-lts \
 # openssl \
-# readline \
-# ruby \
-# sassc \
+# phantomjs \
+# the_silver_searcher \
+# z \
 # zsh
 # [ -f /usr/local/bin/brew ] brew install $BREWS
 
 # # Node
 # NPM_MODULES=\
-# babel \
-# babel-eslint \
-# bower \
-# eslint \
-# eslint-plugin-react \
-# grunt-cli \
-# jscs \
-# jshint \
 # npm \
-# phantomjs \
 # pure-prompt \
-# uglify-js
 # [ -d $NODE_PATH ] npm install -g $NPM_MODULES
 
 # [ -d ~/.oh-my-zsh ] || curl -L https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh | sh
@@ -41,8 +30,8 @@
 [ -h ~/.aliases ] && unlink ~/.aliases
 [ -f ~/src/dotfiles/.aliases ] && ln -s ~/src/dotfiles/.aliases ~/.aliases
 
-[ -h ~/.npmrc ] && unlink ~/.npmrc
-[ -f ~/src/dotfiles/.npmrc ] && ln -s ~/src/dotfiles/.npmrc ~/.npmrc
+# [ -h ~/.npmrc ] && unlink ~/.npmrc
+# [ -f ~/src/dotfiles/.npmrc ] && ln -s ~/src/dotfiles/.npmrc ~/.npmrc
 
 [ -h ~/.editorconfig ] && unlink ~/.editorconfig
 [ -f ~/src/dotfiles/.editorconfig ] && ln -s ~/src/dotfiles/.editorconfig ~/.editorconfig
@@ -53,14 +42,8 @@
 [ -h ~/.gitignore_global ] && unlink ~/.gitignore_global
 [ -f ~/src/dotfiles/.gitignore_global ] && ln -s ~/src/dotfiles/.gitignore_global ~/.gitignore_global
 
-[ -h ~/.jshintrc ] && unlink ~/.jshintrc
-[ -f ~/src/dotfiles/.jshintrc ] && ln -s ~/src/dotfiles/.jshintrc ~/.jshintrc
-
-[ -h ~/.jscsrc ] && unlink ~/.jscsrc
-[ -f ~/src/dotfiles/.jscsrc ] && ln -s ~/src/dotfiles/.jscsrc ~/.jscsrc
-
-[ -h ~/.eslintrc ] && unlink ~/.eslintrc
-[ -f ~/src/javascript/linters/.eslintrc ] && ln -s ~/src/javascript/linters/.eslintrc ~/.eslintrc
+# [ -h ~/.eslintrc ] && unlink ~/.eslintrc
+# [ -f ~/src/javascript/linters/.eslintrc ] && ln -s ~/src/javascript/linters/.eslintrc ~/.eslintrc
 
 [ -h ~/.zshrc ] && unlink ~/.zshrc
 [ -f ~/src/dotfiles/.zshrc ] && ln -s ~/src/dotfiles/.zshrc ~/.zshrc
