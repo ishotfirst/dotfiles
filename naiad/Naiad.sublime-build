@@ -1,5 +1,5 @@
 {
-  "cmd": ["pki \"${file_name}\""],
+  "cmd": ["npm run dev"],
   "working_dir": "${file_path}",
   "shell": true,
   "path": "~/bin:/usr/local/bin:/bin:/usr/bin"
