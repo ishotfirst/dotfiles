@@ -8,6 +8,11 @@ alias st='subl'
 alias stt='subl .'
 alias stn='subl -n'
 
+# Atom
+alias att='atom .'
+alias atn='atom -n'
+
+
 # Colorized "cat"
 alias c='pygmentize -O style=monokai -f console256 -g'
 
