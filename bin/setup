@@ -6,7 +6,6 @@
 # [ -f /usr/local/bin/brew ] || ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 
 # BREWS=\
-# ant \
 # brew-cask \
 # colordiff \
 # git \
@@ -23,6 +22,12 @@
 # NPM_MODULES=\
 # npm \
 # pure-prompt \
+# babel \
+# eslint \
+# babel-eslint \
+# stylelint \
+# stylelint-config-standard \
+# esformatter
 # [ -d $NODE_PATH ] npm install -g $NPM_MODULES
 
 # [ -d ~/.oh-my-zsh ] || curl -L https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh | sh
@@ -30,9 +35,6 @@
 # Setup root Symlinks
 [ -h ~/.aliases ] && unlink ~/.aliases
 [ -f ~/src/dotfiles/.aliases ] && ln -s ~/src/dotfiles/.aliases ~/.aliases
-
-# [ -h ~/.npmrc ] && unlink ~/.npmrc
-# [ -f ~/src/dotfiles/.npmrc ] && ln -s ~/src/dotfiles/.npmrc ~/.npmrc
 
 [ -h ~/.editorconfig ] && unlink ~/.editorconfig
 [ -f ~/src/dotfiles/.editorconfig ] && ln -s ~/src/dotfiles/.editorconfig ~/.editorconfig
@@ -43,8 +45,17 @@
 [ -h ~/.gitignore_global ] && unlink ~/.gitignore_global
 [ -f ~/src/dotfiles/.gitignore_global ] && ln -s ~/src/dotfiles/.gitignore_global ~/.gitignore_global
 
-# [ -h ~/.eslintrc ] && unlink ~/.eslintrc
-# [ -f ~/src/javascript/linters/.eslintrc ] && ln -s ~/src/javascript/linters/.eslintrc ~/.eslintrc
+[ -h ~/.eslintrc ] && unlink ~/.eslintrc
+[ -f ~/src/dotfiles/.eslintrc ] && ln -s ~/src/dotfiles/.eslintrc ~/.eslintrc
+
+[ -h ~/.stylelintrc ] && unlink ~/.stylelintrc
+[ -f ~/src/dotfiles/.stylelintrc ] && ln -s ~/src/dotfiles/.stylelintrc ~/.stylelintrc
+
+[ -h ~/.esformatterrc ] && unlink ~/.esformatterrc
+[ -f ~/src/dotfiles/.esformatterrc ] && ln -s ~/src/dotfiles/.esformatterrc ~/.esformatterrc
+
+[ -h ~/.babelrc ] && unlink ~/.babelrc
+[ -f ~/src/dotfiles/.babelrc ] && ln -s ~/src/dotfiles/.babelrc ~/.babelrc
 
 [ -h ~/.zshrc ] && unlink ~/.zshrc
 [ -f ~/src/dotfiles/.zshrc ] && ln -s ~/src/dotfiles/.zshrc ~/.zshrc
@@ -54,6 +65,9 @@
 
 [ -h ~/.naiad ] && unlink ~/.naiad
 [ -d ~/src/dotfiles/naiad ] && ln -s ~/src/dotfiles/naiad ~/.naiad
+
+# Setup Atom
+# @TODO Install or restor backup from gist
 
 # Setup ST3 Symlinks
 [ -h ~/Library/Application\ Support/Sublime\ Text\ 3/Packages/naiad ] && unlink ~/Library/Application\ Support/Sublime\ Text\ 3/Packages/naiad
