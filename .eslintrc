@@ -1,56 +1,8 @@
 {
   "env": {
-    "browser": true,
-    "es6": true
+    "browser": true
   }, // http://eslint.org/docs/user-guide/configuring#specifying-environments
   "extends": [
     "eslint:recommended"
   ], // http://eslint.org/docs/user-guide/configuring#extending-configuration-files
-  "globals": {
-    "DEBUG": false
-  }, // http://eslint.org/docs/user-guide/configuring#specifying-globals
-  "parser": "babel-eslint",          // https://github.com/babel/babel-eslint
-  "rules": {
-/**
- * Strict mode
- */
-    "strict": [2, "never"],          // http://eslint.org/docs/rules/strict
-
-/**
- * Variables
- */
-    "no-shadow": 2,                  // http://eslint.org/docs/rules/no-shadow
-
-/**
- * Possible errors
- */
-    "no-console": 1,                 // http://eslint.org/docs/rules/no-console
-
-/**
- * Best practices
- */
-    "block-scoped-var": 2,           // http://eslint.org/docs/rules/block-scoped-var
-    "dot-location": [2, "property"], // http://eslint.org/docs/rules/dot-location
-    "dot-notation": [2, {            // http://eslint.org/docs/rules/dot-notation
-      "allowKeywords": true
-    }],
-    "no-param-reassign": 2,          // http://eslint.org/docs/rules/no-param-reassign
-
-/**
- * Style
- */
-    "indent": [2, 2, {"SwitchCase": 1}], // http://eslint.org/docs/rules/indent
-    "jsx-quotes": [2, "prefer-double"],  // http://eslint.org/docs/rules/jsx-quotes
-
-/**
- * ECMAScript 6
- */
-    "object-shorthand": [2, "always"], // http://eslint.org/docs/rules/object-shorthand
-    "prefer-reflect": 2,               // http://eslint.org/docs/rules/prefer-reflect
-
-/**
- * Legacy
- */
-    "max-len": [1, 120, 2]            // http://eslint.org/docs/rules/max-len
-  }
 }

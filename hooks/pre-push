@@ -1,0 +1,19 @@
+#!/bin/sh
+#
+# This hook runs before every push to master.
+#
+# To set this up:
+# 1. Copy this file to your local hooks directory. `cp pre-push .git/hooks`
+# 2. Make the script executable. `chmod +x .git/hooks/pre-push`
+#
+
+protected_branch='master'
+
+current_branch=$(git symbolic-ref HEAD | sed -e 's,.*/\(.*\),\1,')
+
+if [ $current_branch = $protected_branch ]; then
+  echo "RUNNING GIT PRE-PUSH HOOK\n"
+  npm run pre-push -s
+fi
+
+exit 0
