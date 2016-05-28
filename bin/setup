@@ -12,6 +12,7 @@
 # node4-lts \
 # openssl \
 # phantomjs \
+# ruby \
 # the_silver_searcher \
 # trash \
 # z \
@@ -22,13 +23,16 @@
 # NPM_MODULES=\
 # npm \
 # pure-prompt \
-# babel \
 # eslint \
-# babel-eslint \
 # stylelint \
 # stylelint-config-standard \
 # esformatter
 # [ -d $NODE_PATH ] npm install -g $NPM_MODULES
+
+# # Gems
+# GEMS=\
+# jekyll
+# [ -f /usr/local/bin/gem ] gem install $GEMS
 
 # [ -d ~/.oh-my-zsh ] || curl -L https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh | sh
 
@@ -67,14 +71,16 @@
 [ -d ~/src/dotfiles/naiad ] && ln -s ~/src/dotfiles/naiad ~/.naiad
 
 # Setup Atom
-# @TODO Install or restor backup from gist
-
-# Setup ST3 Symlinks
-[ -h ~/Library/Application\ Support/Sublime\ Text\ 3/Packages/naiad ] && unlink ~/Library/Application\ Support/Sublime\ Text\ 3/Packages/naiad
-[ -d ~/src/dotfiles/naiad ] && ln -s ~/src/dotfiles/naiad ~/Library/Application\ Support/Sublime\ Text\ 3/Packages/naiad
-
-[ -h ~/Library/Application\ Support/Sublime\ Text\ 3/Packages/User/Default\ \(OSX\).sublime-keymap ] && unlink ~/Library/Application\ Support/Sublime\ Text\ 3/Packages/User/Default\ \(OSX\).sublime-keymap
-[ -d ~/src/dotfiles/User/Default\ \(OSX\).sublime-keymap ] && ln -s ~/src/dotfiles/User/Default\ \(OSX\).sublime-keymap ~/Library/Application\ Support/Sublime\ Text\ 3/Packages/User/Default\ \(OSX\).sublime-keymap
-
-[ -h ~/Library/Application\ Support/Sublime\ Text\ 3/Packages/User/Preferences.sublime-settings ] && unlink ~/Library/Application\ Support/Sublime\ Text\ 3/Packages/User/Preferences.sublime-settings
-[ -d ~/src/dotfiles/User/Preferences.sublime-settings ] && ln -s ~/src/dotfiles/User/Preferences.sublime-settings ~/Library/Application\ Support/Sublime\ Text\ 3/Packages/User/Preferences.sublime-settings
+# ATOM_PACKAGES=\
+# sync-settings
+# [ -f /usr/local/bin/apm ] apm install $ATOM_PACKAGES
+#
+# @NOTE
+# To restore from the backup, there are some manual steps to take:
+# 
+# 1. Open Sync Settings configuration in Atom Settings.
+# 2. Create a new personal access token which has the gist scope
+#    and be sure to activate permissions: Gist -> create gists.
+# 3. Copy the access token to Sync Settings configuration.
+# 4. Copy the gist id (last part of url after the username) to Sync Settings configuration.
+# 5. Restore backup

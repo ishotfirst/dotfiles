@@ -1,5 +1,7 @@
 #!/usr/bin/env zsh
 
+autoload -U colors && colors
 echo $fg[red]Updating system...$reset_color
 brew update && brew upgrade --all && brew cleanup
 npm -g update
+apm upgrade
