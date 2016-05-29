@@ -25,8 +25,7 @@
 # pure-prompt \
 # eslint \
 # stylelint \
-# stylelint-config-standard \
-# esformatter
+# stylelint-config-standard
 # [ -d $NODE_PATH ] npm install -g $NPM_MODULES
 
 # # Gems
@@ -55,9 +54,6 @@
 [ -h ~/.stylelintrc ] && unlink ~/.stylelintrc
 [ -f ~/src/dotfiles/.stylelintrc ] && ln -s ~/src/dotfiles/.stylelintrc ~/.stylelintrc
 
-[ -h ~/.esformatterrc ] && unlink ~/.esformatterrc
-[ -f ~/src/dotfiles/.esformatterrc ] && ln -s ~/src/dotfiles/.esformatterrc ~/.esformatterrc
-
 [ -h ~/.babelrc ] && unlink ~/.babelrc
 [ -f ~/src/dotfiles/.babelrc ] && ln -s ~/src/dotfiles/.babelrc ~/.babelrc
 
@@ -77,7 +73,7 @@
 #
 # @NOTE
 # To restore from the backup, there are some manual steps to take:
-# 
+#
 # 1. Open Sync Settings configuration in Atom Settings.
 # 2. Create a new personal access token which has the gist scope
 #    and be sure to activate permissions: Gist -> create gists.
