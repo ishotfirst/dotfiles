@@ -19,7 +19,7 @@
 # zsh
 # [ -f /usr/local/bin/brew ] brew install $BREWS
 
-# # Node
+# Node
 # NPM_MODULES=\
 # npm \
 # pure-prompt \
@@ -28,7 +28,7 @@
 # stylelint-config-standard
 # [ -d $NODE_PATH ] npm install -g $NPM_MODULES
 
-# # Gems
+# Gems
 # GEMS=\
 # jekyll
 # [ -f /usr/local/bin/gem ] gem install $GEMS
@@ -51,11 +51,11 @@
 [ -h ~/.eslintrc ] && unlink ~/.eslintrc
 [ -f ~/src/dotfiles/.eslintrc ] && ln -s ~/src/dotfiles/.eslintrc ~/.eslintrc
 
-[ -h ~/.stylelintrc ] && unlink ~/.stylelintrc
-[ -f ~/src/dotfiles/.stylelintrc ] && ln -s ~/src/dotfiles/.stylelintrc ~/.stylelintrc
+# [ -h ~/.stylelintrc ] && unlink ~/.stylelintrc
+# [ -f ~/src/dotfiles/.stylelintrc ] && ln -s ~/src/dotfiles/.stylelintrc ~/.stylelintrc
 
-[ -h ~/.babelrc ] && unlink ~/.babelrc
-[ -f ~/src/dotfiles/.babelrc ] && ln -s ~/src/dotfiles/.babelrc ~/.babelrc
+# [ -h ~/.babelrc ] && unlink ~/.babelrc
+# [ -f ~/src/dotfiles/.babelrc ] && ln -s ~/src/dotfiles/.babelrc ~/.babelrc
 
 [ -h ~/.zshrc ] && unlink ~/.zshrc
 [ -f ~/src/dotfiles/.zshrc ] && ln -s ~/src/dotfiles/.zshrc ~/.zshrc

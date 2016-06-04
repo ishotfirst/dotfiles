@@ -6,5 +6,5 @@ charset = utf-8
 end_of_line = LF
 insert_final_newline = true
 tab_width = 2
-indent_style = space
+indent_style = tab
 indent_size = 2
