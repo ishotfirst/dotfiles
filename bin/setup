@@ -66,6 +66,10 @@
 [ -h ~/.naiad ] && unlink ~/.naiad
 [ -d ~/src/dotfiles/naiad ] && ln -s ~/src/dotfiles/naiad ~/.naiad
 
+# Setup iTerm2 dynamic profile
+[ -h ~/Library/Application Support/iTerm2/DynamicProfiles/jasonl-seti.plist ] && unlink ~/Library/Application Support/iTerm2/DynamicProfiles/jasonl-seti.plist
+[ -d ~/Library/Application Support/iTerm2/DynamicProfiles ] && ln -s ~/src/dotfiles/jasonl-seti.plist ~/Library/Application Support/iTerm2/DynamicProfiles/jasonl-seti.plist
+
 # Setup Atom
 # ATOM_PACKAGES=\
 # sync-settings
