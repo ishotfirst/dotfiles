@@ -49,9 +49,3 @@ autoload -U promptinit && promptinit
 prompt pure
 
 test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
-
-# The next line updates PATH for the Google Cloud SDK.
-source '/Users/jasonl/google-cloud-sdk/path.zsh.inc'
-
-# The next line enables shell command completion for gcloud.
-source '/Users/jasonl/google-cloud-sdk/completion.zsh.inc'
