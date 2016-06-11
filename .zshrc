@@ -37,8 +37,6 @@ source $ZSH/oh-my-zsh.sh
 # Customize to your needs...
 export PATH=$HOME/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin
 
-export NODE_PATH=/usr/local/lib/node_modules
-
 source $HOME/.aliases
 
 . `brew --prefix`/etc/profile.d/z.sh
@@ -49,3 +47,6 @@ autoload -U promptinit && promptinit
 prompt pure
 
 test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
+
+export NVM_DIR=$HOME/.nvm
+source $(brew --prefix nvm)/nvm.sh

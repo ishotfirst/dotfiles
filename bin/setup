@@ -6,10 +6,9 @@
 # [ -f /usr/local/bin/brew ] || ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 
 # BREWS=\
-# brew-cask \
 # colordiff \
 # git \
-# node4-lts \
+# nvm \
 # openssl \
 # phantomjs \
 # ruby \
@@ -23,10 +22,8 @@
 # NPM_MODULES=\
 # npm \
 # pure-prompt \
-# eslint \
-# stylelint \
-# stylelint-config-standard
-# [ -d $NODE_PATH ] npm install -g $NPM_MODULES
+# eslint
+# [ -d $NVM_PATH/versions/node/$(nvm current)/lib/node_modules ] npm install -g $NPM_MODULES
 
 # Gems
 # GEMS=\
