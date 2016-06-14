@@ -3,6 +3,8 @@ alias ...='cd ../../'
 alias ....='cd ../../../'
 alias .....='cd ../../../../'
 
+alias rm='trash'
+
 # Shell
 
 alias resource='source ~/.zshrc'
