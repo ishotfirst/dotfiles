@@ -7,4 +7,4 @@ brew update && brew upgrade --all && brew cleanup
 echo $fg[green]Updating npm...$reset_color
 npm -g update
 echo $fg[green]Updating Atom...$reset_color
-apm upgrade
+apm upgrade --no-confirm
