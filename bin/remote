@@ -1,4 +1,0 @@
-#!/bin/bash
-
-NAIAD_DEVEL=$(cat ~/.naiad/.devel)
-ssh -t -t -q $NAIAD_DEVEL "$@"

@@ -1,8 +1,5 @@
 *~
 .DS_Store
-.devel
-.proxy
-.servers
 .npmrc
 npm-debug.log
 node_modules
