@@ -4,9 +4,9 @@ autoload -U colors && colors
 echo $fg[red]Updating system...$reset_color
 echo $fg[green]Updating Homebrew...$reset_color
 brew update && brew upgrade --all && brew cleanup
-echo $fg[green]Updating Homebrew Casks...$reset_color
-brew cask update && brew cask cleanup
 echo $fg[green]Updating npm...$reset_color
 npm -g update
 echo $fg[green]Updating Atom...$reset_color
 apm upgrade --no-confirm
+echo $fg[green]Updating Homebrew Casks...$reset_color
+brew cask update && brew cask cleanup
