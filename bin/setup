@@ -18,6 +18,49 @@
 # zsh
 # [ -f /usr/local/bin/brew ] brew install $BREWS
 
+# Homebrew Cask
+# [ -f /usr/local/bin/brew ] brew tap caskroom/cask && brew tap caskroom/versions
+
+# CASKS=\
+# 1password \
+# alfred \
+# appcleaner \
+# atom \
+# backblaze \
+# daisydisk \
+# dash \
+# deluge \
+# drobo-dashboard \
+# dropbox \
+# droplr \
+# etrecheck \
+# firefox \
+# google-chrome \
+# google-chrome-canary \
+# google-drive \
+# google-photos-backup \
+# hyperterm \
+# imageoptim \
+# iterm2 \
+# kaleidoscope \
+# keepingyouawake \
+# spotify \
+# superduper \
+# the-unarchiver
+# [ -f /usr/local/bin/brew-cask ] brew cask install $CASKS
+#
+# NO CASK YET
+# https://github.com/caskroom/homebrew-cask/blob/master/CONTRIBUTING.md#adding-a-cask
+#
+# bettersnaptool
+# noteburner-m4v-converter-plus
+# photosweeper
+# pixelmator
+# sim-daltonism
+# simplenote
+# tweetbot
+# wunderlist
+
 # Node
 # NPM_MODULES=\
 # npm \
