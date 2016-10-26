@@ -13,6 +13,10 @@ alias resource='source ~/.zshrc'
 alias att='atom .'
 alias atn='atom -n'
 
+# VSCode
+alias ctt='code .'
+alias ctn='code -n'
+
 # Colorized "cat"
 alias c='pygmentize -O style=monokai -f console256 -g'
 
