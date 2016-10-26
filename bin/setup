@@ -100,6 +100,9 @@
 [ -h ~/.zshrc ] && unlink ~/.zshrc
 [ -f ~/src/dotfiles/.zshrc ] && ln -s ~/src/dotfiles/.zshrc ~/.zshrc
 
+[ -h ~/.hyper.js ] && unlink ~/.hyper.js
+[ -f ~/src/dotfiles/.hyper.js ] && ln -s ~/src/dotfiles/.hyper.js ~/.hyper.js
+
 [ -h ~/bin ] && unlink ~/bin
 [ -d ~/src/dotfiles/bin ] && ln -s ~/src/dotfiles/bin ~/
 
