@@ -50,3 +50,5 @@ test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell
 
 export NVM_DIR=$HOME/.nvm
 source $(brew --prefix nvm)/nvm.sh
+
+export PATH="$HOME/.yarn/bin:$PATH"
