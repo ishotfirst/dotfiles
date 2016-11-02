@@ -106,8 +106,8 @@
 [ -h ~/.hyper.js ] && unlink ~/.hyper.js
 [ -f ~/src/dotfiles/.hyperterm.js ] && ln -s ~/src/dotfiles/.hyperterm.js ~/.hyper.js
 
-[ -h ~/bin ] && unlink ~/bin
-[ -d ~/src/dotfiles/bin ] && ln -s ~/src/dotfiles/bin ~/
+[ -h /usr/local/bin/updateSystem ] && unlink /usr/local/bin/updateSystem
+[ -d ~/src/dotfiles/bin ] && ln -s ~/src/dotfiles/bin/updateSystem /usr/local/bin/updateSystem
 
 # Setup iTerm2 dynamic profile
 [ -h ~/Library/Application Support/iTerm2/DynamicProfiles/jasonl-seti.plist ] && unlink ~/Library/Application Support/iTerm2/DynamicProfiles/jasonl-seti.plist
