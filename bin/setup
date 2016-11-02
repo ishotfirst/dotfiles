@@ -8,6 +8,7 @@
 # BREWS=\
 # colordiff \
 # git \
+# mas \
 # nvm \
 # openssl \
 # phantomjs \
@@ -19,6 +20,7 @@
 # [ -f /usr/local/bin/brew ] brew install $BREWS
 
 # Homebrew Cask
+# TODO: Use mas instead?
 # [ -f /usr/local/bin/brew ] brew tap caskroom/cask && brew tap caskroom/versions
 
 # CASKS=\
@@ -65,7 +67,8 @@
 # NPM_MODULES=\
 # npm \
 # pure-prompt \
-# eslint
+# eslint \
+# fast-cli
 # [ -d $NVM_PATH/versions/node/$(nvm current)/lib/node_modules ] npm install -g $NPM_MODULES
 
 # Gems
