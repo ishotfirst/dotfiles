@@ -27,6 +27,7 @@
 # appcleaner \
 # atom \
 # backblaze \
+# brave \
 # dash \
 # deluge \
 # drobo-dashboard \
@@ -37,12 +38,18 @@
 # google-chrome-canary \
 # google-drive \
 # google-photos-backup \
-# hyperterm \
+# hyper \
 # imageoptim \
 # iterm2 \
+# keepassx \
 # keepingyouawake \
+# opera \
+# rocket \
+# servo \
+# slack \
 # spotify \
 # superduper \
+# visual-studio-code
 # [ -f /usr/local/bin/brew-cask ] brew cask install $CASKS
 #
 # NO CASK YET
@@ -59,7 +66,6 @@
 # 587512244 Kaleidoscope (2.1.0)
 # 409201541 Pages (6.0.5)
 # 463362050 PhotoSweeper (2.2.6)
-# 407963104 Pixelmator (3.5.1)
 # 693112260 Sim Daltonism (2.0)
 # 692867256 Simplenote (1.1.7)
 # 425424353 The Unarchiver (3.11.1)
