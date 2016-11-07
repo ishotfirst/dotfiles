@@ -20,21 +20,17 @@
 # [ -f /usr/local/bin/brew ] brew install $BREWS
 
 # Homebrew Cask
-# TODO: Use mas instead?
 # [ -f /usr/local/bin/brew ] brew tap caskroom/cask && brew tap caskroom/versions
 
 # CASKS=\
-# 1password \
 # alfred \
 # appcleaner \
 # atom \
 # backblaze \
-# daisydisk \
 # dash \
 # deluge \
 # drobo-dashboard \
 # dropbox \
-# droplr \
 # etrecheck \
 # firefox \
 # google-chrome \
@@ -44,24 +40,44 @@
 # hyperterm \
 # imageoptim \
 # iterm2 \
-# kaleidoscope \
 # keepingyouawake \
 # spotify \
 # superduper \
-# the-unarchiver
 # [ -f /usr/local/bin/brew-cask ] brew cask install $CASKS
 #
 # NO CASK YET
 # https://github.com/caskroom/homebrew-cask/blob/master/CONTRIBUTING.md#adding-a-cask
 #
-# bettersnaptool
 # noteburner-m4v-converter-plus
-# photosweeper
-# pixelmator
-# sim-daltonism
-# simplenote
-# tweetbot
-# wunderlist
+
+# Mac App Store
+#
+# 443987910 1Password (6.3.5)
+# 417375580 BetterSnapTool (1.7)
+# 411643860 DaisyDisk (4.3)
+# 498672703 Droplr (4.6.4)
+# 587512244 Kaleidoscope (2.1.0)
+# 409201541 Pages (6.0.5)
+# 463362050 PhotoSweeper (2.2.6)
+# 407963104 Pixelmator (3.5.1)
+# 693112260 Sim Daltonism (2.0)
+# 692867256 Simplenote (1.1.7)
+# 425424353 The Unarchiver (3.11.1)
+# 557168941 Tweetbot (2.4.4)
+#
+# MACOS_APPS=\
+# 557168941 \
+# 443987910 \
+# 417375580 \
+# 498672703 \
+# 409201541 \
+# 587512244 \
+# 463362050 \
+# 411643860 \
+# 692867256 \
+# 425424353 \
+# 693112260
+# [ -f /usr/local/bin/mas ] mas install $MACOS_APPS
 
 # Node
 # NPM_MODULES=\

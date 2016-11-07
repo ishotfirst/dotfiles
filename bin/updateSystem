@@ -10,3 +10,5 @@ echo $fg[green]Updating Atom...$reset_color
 apm upgrade --no-confirm
 echo $fg[green]Updating Homebrew Casks...$reset_color
 brew cask update && brew cask cleanup
+echo $fg[green]Updating macOS Apps...$reset_color
+mas upgrade
