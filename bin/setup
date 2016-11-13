@@ -35,7 +35,6 @@
 # etrecheck \
 # firefox \
 # google-chrome \
-# google-chrome-canary \
 # google-drive \
 # google-photos-backup \
 # hyper \
@@ -43,7 +42,6 @@
 # iterm2 \
 # keepassx \
 # keepingyouawake \
-# opera \
 # rocket \
 # servo \
 # slack \
@@ -69,10 +67,8 @@
 # 693112260 Sim Daltonism (2.0)
 # 692867256 Simplenote (1.1.7)
 # 425424353 The Unarchiver (3.11.1)
-# 557168941 Tweetbot (2.4.4)
 #
 # MACOS_APPS=\
-# 557168941 \
 # 443987910 \
 # 417375580 \
 # 498672703 \
