@@ -7,7 +7,7 @@ if [ -f ~/.aliases ]; then
 fi
 
 BLOCKSIZE=K; export BLOCKSIZE
-EDITOR='subl -w';  export EDITOR
+EDITOR='code -w';  export EDITOR
 PAGER='less -R';  export PAGER
 
 if [ -f `brew --prefix`/etc/bash_completion ]; then

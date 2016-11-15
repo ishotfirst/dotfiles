@@ -9,8 +9,8 @@ ZSH=$HOME/.oh-my-zsh
 # ZSH_THEME="pure"
 
 # Example aliases
-alias zshconfig="atom ~/.zshrc"
-alias ohmyzsh="atom ~/.oh-my-zsh"
+alias zshconfig="code ~/.zshrc"
+alias ohmyzsh="code ~/.oh-my-zsh"
 
 # Set to this to use case-sensitive completion
 # CASE_SENSITIVE="true"
@@ -46,7 +46,7 @@ fpath+=("/usr/local/share/zsh/site-functions")
 autoload -U promptinit && promptinit
 prompt pure
 
-test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
+# test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
 
 export NVM_DIR=$HOME/.nvm
 source $(brew --prefix nvm)/nvm.sh
