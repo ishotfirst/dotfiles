@@ -11,11 +11,8 @@
 # mas \
 # nvm \
 # openssl \
-# phantomjs \
 # ruby \
-# the_silver_searcher \
 # trash \
-# z \
 # zsh
 # [ -f /usr/local/bin/brew ] brew install $BREWS
 
@@ -25,7 +22,6 @@
 # CASKS=\
 # alfred \
 # appcleaner \
-# atom \
 # backblaze \
 # brave \
 # dash \
@@ -39,8 +35,8 @@
 # google-photos-backup \
 # hyper \
 # imageoptim \
-# iterm2 \
 # keepingyouawake \
+# postman \
 # rocket \
 # slack \
 # spotify \
@@ -126,10 +122,6 @@
 
 [ -h /usr/local/bin/updateSystem ] && unlink /usr/local/bin/updateSystem
 [ -d ~/src/dotfiles/bin ] && ln -s ~/src/dotfiles/bin/updateSystem /usr/local/bin/updateSystem
-
-# Setup iTerm2 dynamic profile
-[ -h ~/Library/Application Support/iTerm2/DynamicProfiles/jasonl-seti.plist ] && unlink ~/Library/Application Support/iTerm2/DynamicProfiles/jasonl-seti.plist
-[ -d ~/Library/Application Support/iTerm2/DynamicProfiles ] && ln -s ~/src/dotfiles/jasonl-seti.plist ~/Library/Application Support/iTerm2/DynamicProfiles/jasonl-seti.plist
 
 # Setup Atom
 # ATOM_PACKAGES=\

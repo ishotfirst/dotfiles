@@ -9,10 +9,6 @@ alias rm='trash'
 
 alias resource='source ~/.zshrc'
 
-# Atom
-alias att='atom .'
-alias atn='atom -n'
-
 # VSCode
 alias ctt='code .'
 alias ctn='code -n'
