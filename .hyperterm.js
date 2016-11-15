@@ -63,7 +63,9 @@ module.exports = {
     shellArgs: ['--login'],
 
     // for environment variables
-    env: {},
+    env: {
+      EDITOR: 'vim'
+    },
 
     // set to false for no bell
     bell: false,
