@@ -16,6 +16,9 @@
 # zsh
 # [ -f /usr/local/bin/brew ] brew install $BREWS
 
+# Install stable versions of Node
+# nvm install lts stable
+
 # Homebrew Cask
 # [ -f /usr/local/bin/brew ] brew tap caskroom/cask && brew tap caskroom/versions
 
@@ -123,17 +126,21 @@
 [ -h /usr/local/bin/updateSystem ] && unlink /usr/local/bin/updateSystem
 [ -d ~/src/dotfiles/bin ] && ln -s ~/src/dotfiles/bin/updateSystem /usr/local/bin/updateSystem
 
-# Setup Atom
-# ATOM_PACKAGES=\
-# sync-settings
-# [ -f /usr/local/bin/apm ] apm install $ATOM_PACKAGES
-#
-# @NOTE
-# To restore from the backup, there are some manual steps to take:
-#
-# 1. Open Sync Settings configuration in Atom Settings.
-# 2. Create a new personal access token which has the gist scope
-#    and be sure to activate permissions: Gist -> create gists.
-# 3. Copy the access token to Sync Settings configuration.
-# 4. Copy the gist id (last part of url after the username) to Sync Settings configuration.
-# 5. Restore backup
+# Setup VSCode
+# CODE_PACKAGES=\
+# EditorConfig.EditorConfig
+# HookyQR.beautify
+# abusaidm.html-snippets
+# christian-kohler.npm-intellisense
+# christian-kohler.path-intellisense
+# dbaeumer.vscode-eslint
+# donjayamanne.python
+# joelday.docthis
+# mohsen1.prettify-json
+# msjsdiag.debugger-for-chrome
+# robertohuertasm.vscode-icons
+# shinnn.stylelint
+# xabikos.JavaScriptSnippets
+# xabikos.ReactSnippets
+# zhuangtongfa.Material-theme
+# [ -f /usr/local/bin/code ] code --install-extension $CODE_PACKAGES

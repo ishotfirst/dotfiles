@@ -39,14 +39,10 @@ export PATH=/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin
 
 source $HOME/.aliases
 
-. `brew --prefix`/etc/profile.d/z.sh
-
 fpath+=("/usr/local/share/zsh/site-functions")
 
 autoload -U promptinit && promptinit
 prompt pure
-
-# test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
 
 export NVM_DIR=$HOME/.nvm
 source $(brew --prefix nvm)/nvm.sh
