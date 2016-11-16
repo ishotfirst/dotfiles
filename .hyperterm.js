@@ -6,20 +6,8 @@ module.exports = {
     // font family with optional fallbacks
     fontFamily: 'Monaco, Menlo, "DejaVu Sans Mono", "Lucida Console", monospace',
 
-    // terminal cursor background color and opacity (hex, rgb, hsl, hsv, hwb or cmyk)
-    cursorColor: '#9e70c2',
-
     // `BEAM` for |, `UNDERLINE` for _, `BLOCK` for █
     cursorShape: 'UNDERLINE',
-
-    // color of the text
-    foregroundColor: '#f1f1f1',
-
-    // terminal background color
-    backgroundColor: 'rgba(21,23,24,0.8)',
-
-    // border color (window, tabs)
-    borderColor: '#333',
 
     // custom css to embed in the main window
     css: '',
@@ -31,28 +19,6 @@ module.exports = {
 
     // custom padding (css format, i.e.: `top right bottom left`)
     padding: '12px 14px',
-
-    // the full list. if you're going to provide the full color palette,
-    // including the 6 x 6 color cubes and the grayscale map, just provide
-    // an array here instead of a color map object
-    colors: {
-      black: '#414141',
-      red: '#cf3d41',
-      green: '#9ecb4d',
-      yellow: '#e7ce61',
-      blue: '#51b4dd',
-      magenta: '#9e70c2',
-      cyan: '#00ffff',
-      white: '#f1f1f1',
-      lightBlack: '#414141',
-      lightRed: '#cf3d41',
-      lightGreen: '#9ecb4d',
-      lightYellow: '#e7ce61',
-      lightBlue: '#51b4dd',
-      lightMagenta: '#cc00ff',
-      lightCyan: '#9ecb4d',
-      lightWhite: '#ffffff'
-    },
 
     // the shell to run when spawning a new session (i.e. /usr/local/bin/fish)
     // if left empty, your system's login shell will be used by default
@@ -85,7 +51,9 @@ module.exports = {
   //   `hyperpower`
   //   `@company/project`
   //   `project#1.0.1`
-  plugins: [],
+  plugins: [
+    'hyperterm-material'
+  ],
 
   // in development, you can create a directory under
   // `~/.hyper_plugins/local/` and include it here
