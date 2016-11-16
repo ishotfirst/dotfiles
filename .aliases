@@ -10,8 +10,8 @@ alias rm='trash'
 alias resource='source ~/.zshrc'
 
 # VSCode
-alias ctt='code .'
-alias ctn='code -n'
+alias att='code .'
+alias atn='code -n'
 
 # Colorized "cat"
 alias c='pygmentize -O style=monokai -f console256 -g'
