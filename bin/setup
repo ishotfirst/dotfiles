@@ -16,7 +16,7 @@
 # zsh
 # [ -f /usr/local/bin/brew ] brew install $BREWS
 
-# Install stable versions of Node
+# Install LTS and stable versions of Node
 # nvm install lts stable
 
 # Homebrew Cask
@@ -130,6 +130,7 @@
 # CODE_PACKAGES=\
 # EditorConfig.EditorConfig
 # HookyQR.beautify
+# Shan.code-settings-sync
 # abusaidm.html-snippets
 # christian-kohler.npm-intellisense
 # christian-kohler.path-intellisense
