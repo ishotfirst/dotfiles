@@ -111,11 +111,8 @@
 [ -h ~/.eslintrc ] && unlink ~/.eslintrc
 [ -f ~/src/dotfiles/.eslintrc ] && ln -s ~/src/dotfiles/.eslintrc ~/.eslintrc
 
-# [ -h ~/.stylelintrc ] && unlink ~/.stylelintrc
-# [ -f ~/src/dotfiles/.stylelintrc ] && ln -s ~/src/dotfiles/.stylelintrc ~/.stylelintrc
-
-# [ -h ~/.babelrc ] && unlink ~/.babelrc
-# [ -f ~/src/dotfiles/.babelrc ] && ln -s ~/src/dotfiles/.babelrc ~/.babelrc
+[ -h ~/.stylelintrc ] && unlink ~/.stylelintrc
+[ -f ~/src/dotfiles/.stylelintrc ] && ln -s ~/src/dotfiles/.stylelintrc ~/.stylelintrc
 
 [ -h ~/.zshrc ] && unlink ~/.zshrc
 [ -f ~/src/dotfiles/.zshrc ] && ln -s ~/src/dotfiles/.zshrc ~/.zshrc
