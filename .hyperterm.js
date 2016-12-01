@@ -53,7 +53,8 @@ module.exports = {
   //   `project#1.0.1`
   plugins: [
     'hyperterm-material',
-    'hyperlinks'
+    'hyperlinks',
+    'hyperterm-tab-icons'
   ],
 
   // in development, you can create a directory under

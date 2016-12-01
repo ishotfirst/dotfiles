@@ -16,9 +16,6 @@ fi
 
 PS1='\[\033[01;32m\]\h\[\033[00m\]:$(__git_ps1) \[\033[01;34m\]\w\[\033[00m\] \$ '
 
-# Group-writable umask. Let other developers overwrite my installed files.
-umask 002
-
 export CLICOLOR=1
 export LSCOLORS=ExFxCxDxBxegedabagacad
 export LC_CTYPE=en_US.UTF-8

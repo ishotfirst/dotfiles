@@ -27,7 +27,6 @@
 # appcleaner \
 # backblaze \
 # brave \
-# dash \
 # deluge \
 # drobo-dashboard \
 # dropbox \
@@ -63,6 +62,7 @@
 # 409203825 Numbers (4.0.5)
 # 409201541 Pages (6.0.5)
 # 463362050 PhotoSweeper (2.2.6)
+# 407963104 Pixelmator (3.6)
 # 693112260 Sim Daltonism (2.0)
 # 692867256 Simplenote (1.1.7)
 # 425424353 The Unarchiver (3.11.1)
@@ -79,7 +79,8 @@
 # 692867256 \
 # 425424353 \
 # 693112260 \
-# 972028355
+# 972028355 \
+# 407963104
 # [ -f /usr/local/bin/mas ] mas install $MACOS_APPS
 
 # Node
@@ -87,7 +88,8 @@
 # npm \
 # pure-prompt \
 # eslint \
-# fast-cli
+# fast-cli \
+# hpm-cli
 # [ -d $NVM_PATH/versions/node/$(nvm current)/lib/node_modules ] npm install -g $NPM_MODULES
 
 # Gems
@@ -129,6 +131,8 @@
 # CODE_PACKAGES=\
 # EditorConfig.EditorConfig
 # HookyQR.beautify
+# HookyQR.minify
+# NathanRidley.autotrim
 # Shan.code-settings-sync
 # Zignd.html-css-class-completion
 # abusaidm.html-snippets
