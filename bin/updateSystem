@@ -8,7 +8,7 @@ echo $fg[green]Updating npm...$reset_color
 npm -g update
 echo $fg[green]Updating Homebrew Casks...$reset_color
 brew cask update && brew cask cleanup
-# echo $fg[green]Updating macOS...$reset_color
-# softwareupdate -i -a
+echo $fg[green]Updating macOS...$reset_color
+softwareupdate -i -a
 echo $fg[green]Updating macOS Apps...$reset_color
 mas upgrade
