@@ -32,13 +32,17 @@
 # etrecheck \
 # firefox \
 # google-chrome \
-# google-drive \
 # google-photos-backup \
 # hyper \
 # imageoptim \
 # keepingyouawake \
+# opera \
 # postman \
+# pycharm \
+# qlmarkdown \
 # rocket \
+# servo \
+# skype \
 # slack \
 # spotify \
 # superduper \
@@ -48,7 +52,9 @@
 # NO CASK YET
 # https://github.com/caskroom/homebrew-cask/blob/master/CONTRIBUTING.md#adding-a-cask
 #
+# firefox-developer-edition
 # noteburner-m4v-converter-plus
+# safari-technology-preview
 
 # Mac App Store
 #
@@ -87,8 +93,7 @@
 # npm \
 # pure-prompt \
 # eslint \
-# fast-cli \
-# hpm-cli
+# fast-cli
 # [ -d $NVM_PATH/versions/node/$(nvm current)/lib/node_modules ] npm install -g $NPM_MODULES
 
 # Gems
@@ -132,8 +137,10 @@
 # HookyQR.beautify
 # HookyQR.minify
 # Shan.code-settings-sync
+# WallabyJs.wallaby-vscode
 # Zignd.html-css-class-completion
 # abusaidm.html-snippets
+# capaj.vscode-exports-autocomplete
 # christian-kohler.npm-intellisense
 # christian-kohler.path-intellisense
 # dbaeumer.vscode-eslint
