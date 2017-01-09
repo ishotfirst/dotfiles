@@ -18,6 +18,7 @@
 
 # Install LTS and stable versions of Node
 # nvm install lts stable
+# nvm alias default lts/*
 
 # Homebrew Cask
 # [ -f /usr/local/bin/brew ] brew tap caskroom/cask && brew tap caskroom/versions
@@ -43,15 +44,18 @@
 # slack \
 # spotify \
 # superduper \
+# sync \
 # visual-studio-code
 # [ -f /usr/local/bin/brew-cask ] brew cask install $CASKS
 #
 # NO CASK YET
 # https://github.com/caskroom/homebrew-cask/blob/master/CONTRIBUTING.md#adding-a-cask
 #
+# google-chrome-canary
 # firefox-developer-edition
 # noteburner-m4v-converter-plus
 # safari-technology-preview
+# webkit
 
 # Mac App Store
 #
@@ -87,10 +91,11 @@
 
 # Node
 # NPM_MODULES=\
+# bower \
 # npm \
 # pure-prompt \
 # eslint \
-# fast-cli
+# polymer-cli
 # [ -d $NVM_PATH/versions/node/$(nvm current)/lib/node_modules ] npm install -g $NPM_MODULES
 
 # Gems
@@ -134,24 +139,19 @@
 # HookyQR.beautify
 # HookyQR.minify
 # Shan.code-settings-sync
-# WallabyJs.wallaby-vscode
 # Zignd.html-css-class-completion
 # abusaidm.html-snippets
 # capaj.vscode-exports-autocomplete
+# chimon2000.polymer-snippets
 # christian-kohler.npm-intellisense
 # christian-kohler.path-intellisense
 # dbaeumer.vscode-eslint
 # donjayamanne.githistory
-# donjayamanne.python
 # joelday.docthis
-# magicstack.MagicPython
-# mkaufman.HTMLHint
-# mohsen1.prettify-json
-# ms-vscode.atom-keybindings
-# msjsdiag.debugger-for-chrome
+# jonwolfe.language-polymer
 # naumovs.color-highlight
+# polymer.polymer-ide
 # robertohuertasm.vscode-icons
-# shinnn.stylelint
 # xabikos.JavaScriptSnippets
 # xabikos.ReactSnippets
 # zhuangtongfa.Material-theme
