@@ -17,7 +17,7 @@
 # [ -f /usr/local/bin/brew ] brew install $BREWS
 
 # Install LTS and stable versions of Node
-# nvm install lts stable
+# nvm install lts/* stable
 # nvm alias default lts/*
 
 # Homebrew Cask
@@ -72,7 +72,7 @@
 # 407963104 Pixelmator (3.6)
 # 693112260 Sim Daltonism (2.0)
 # 692867256 Simplenote (1.1.7)
-# 425424353 The Unarchiver (3.11.1)
+# 931134707 Wire (2.10)
 #
 # MACOS_APPS=\
 # 409203825 \
@@ -84,7 +84,7 @@
 # 463362050 \
 # 411643860 \
 # 692867256 \
-# 425424353 \
+# 931134707 \
 # 693112260 \
 # 972028355 \
 # 407963104
@@ -93,7 +93,6 @@
 # Node
 # NPM_MODULES=\
 # bower \
-# npm \
 # pure-prompt \
 # eslint \
 # polymer-cli
@@ -143,15 +142,12 @@
 # Zignd.html-css-class-completion
 # abusaidm.html-snippets
 # capaj.vscode-exports-autocomplete
-# chimon2000.polymer-snippets
 # christian-kohler.npm-intellisense
 # christian-kohler.path-intellisense
 # dbaeumer.vscode-eslint
 # donjayamanne.githistory
 # joelday.docthis
-# jonwolfe.language-polymer
 # naumovs.color-highlight
-# polymer.polymer-ide
 # robertohuertasm.vscode-icons
 # xabikos.JavaScriptSnippets
 # xabikos.ReactSnippets
