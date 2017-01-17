@@ -54,7 +54,8 @@ module.exports = {
   plugins: [
     'hyperterm-material',
     'hyperlinks',
-    'hyperterm-tab-icons'
+    'hyperterm-tab-cwd',
+    'hyper-statusline'
   ],
 
   // in development, you can create a directory under
