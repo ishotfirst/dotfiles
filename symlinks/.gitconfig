@@ -1,0 +1,65 @@
+[user]
+  name = Jason LeMoine
+  email = github@lemoine.io
+
+[core]
+  excludesfile = /Users/jasonl/.gitignore_global
+  quotepath = false
+  pager = /usr/local/share/git-core/contrib/diff-highlight/diff-highlight | less
+
+[color]
+  ui = always
+
+[color "diff-highlight"]
+  oldNormal = red bold
+  oldHighlight = red bold 52
+  newNormal = green bold
+  newHighlight = green bold 22
+
+[color "diff"]
+  commit = green
+  meta = yellow
+  frag = cyan
+  old = red
+  new = green
+  whitespace = red reverse
+
+[mergetool "Kaleidoscope"]
+  cmd = ksdiff --merge --output \"$MERGED\" --base \"$BASE\" -- \"$LOCAL\" --snapshot \"$REMOTE\" --snapshot
+  trustExitCode = true
+
+[mergetool]
+  prompt = false
+
+[difftool "Kaleidoscope"]
+  cmd = ksdiff --partial-changeset --relative-path \"$MERGED\" -- \"$LOCAL\" \"$REMOTE\"
+
+[difftool]
+  prompt = false
+
+[diff]
+  tool = Kaleidoscope
+
+[alias]
+  st = status
+  co = checkout
+  ci = commit
+  cma = commit --amend
+  br = branch
+  cl = clone
+  db = branch -d
+  df = diff
+  dc = diff --cached
+  dt = difftool
+  dtc = difftool --cached
+  f = fetch
+  lg = log -p
+  lol = log --graph --decorate --pretty=oneline --abbrev-commit
+  lola = log --graph --decorate --pretty=oneline --abbrev-commit --all
+  lom = log -1 --decorate --pretty=oneline origin/master
+  ff = merge --ff-only
+  rh = reset --hard
+
+[filter "media"]
+  clean = git-media-clean %f
+  smudge = git-media-smudge %f
