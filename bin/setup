@@ -5,7 +5,12 @@ autoload -U colors && colors
 # Install common software
 echo $fg[red]Install common software...$reset_color
 
+# PIP
+echo $fg[green]Python packages...$reset_color
+# pip install Pygments
+
 # Homebrew
+echo $fg[green]Homebrew...$reset_color
 # [ -f /usr/local/bin/brew ] || ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 
 # BREWS=\
@@ -19,11 +24,8 @@ echo $fg[red]Install common software...$reset_color
 # zsh
 # [ -f /usr/local/bin/brew ] brew install $BREWS
 
-# Install LTS and stable versions of Node
-# nvm install lts/* stable
-# nvm alias default lts/*
-
 # Homebrew Cask
+echo $fg[green]Homebrew Casks...$reset_color
 # [ -f /usr/local/bin/brew ] brew tap caskroom/cask && brew tap caskroom/versions
 
 # CASKS=\
@@ -60,6 +62,7 @@ echo $fg[red]Install common software...$reset_color
 # safari-technology-preview
 
 # Mac App Store
+echo $fg[green]macOS apps...$reset_color
 #
 # 443987910 1Password (6.3.5)
 # 417375580 BetterSnapTool (1.7)
@@ -89,7 +92,13 @@ echo $fg[red]Install common software...$reset_color
 # 407963104
 # [ -f /usr/local/bin/mas ] mas install $MACOS_APPS
 
+# Install LTS and stable versions of Node
+echo $fg[green]Node versions...$reset_color
+# nvm install lts/* stable
+# nvm alias default lts/*
+
 # Node
+echo $fg[green]Node modules...$reset_color
 # NPM_MODULES=\
 # bower \
 # pure-prompt \
@@ -98,6 +107,7 @@ echo $fg[red]Install common software...$reset_color
 # [ -d $NVM_PATH/versions/node/$(nvm current)/lib/node_modules ] npm install -g $NPM_MODULES
 
 # Gems
+echo $fg[green]Ruby gems...$reset_color
 # GEMS=\
 # jekyll
 # [ -f /usr/local/bin/gem ] gem install $GEMS
@@ -105,6 +115,7 @@ echo $fg[red]Install common software...$reset_color
 # [ -d ~/.oh-my-zsh ] || curl -L https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh | sh
 
 # Setup VSCode
+echo $fg[green]VSCode extensions...$reset_color
 # CODE_PACKAGES=\
 # EditorConfig.EditorConfig
 # HookyQR.beautify
