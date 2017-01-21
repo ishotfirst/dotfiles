@@ -1,7 +1,0 @@
-*~
-.DS_Store
-.npmrc
-npm-debug.log
-node_modules
-bower_components
-*.pyc

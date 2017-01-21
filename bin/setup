@@ -1,6 +1,9 @@
-#!/bin/bash
+#!/usr/bin/env zsh
+
+autoload -U colors && colors
 
 # Install common software
+echo $fg[red]Install common software...$reset_color
 
 # Homebrew
 # [ -f /usr/local/bin/brew ] || ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
@@ -34,7 +37,6 @@
 # firefox \
 # gitter \
 # google-chrome \
-# google-photos-backup \
 # hyper \
 # imageoptim \
 # kap \
@@ -45,7 +47,6 @@
 # slack \
 # spotify \
 # superduper \
-# sync \
 # visual-studio-code
 # [ -f /usr/local/bin/brew-cask ] brew cask install $CASKS
 #
@@ -57,7 +58,6 @@
 # noteburner-m4v-converter-plus
 # now
 # safari-technology-preview
-# webkit
 
 # Mac App Store
 #
@@ -73,7 +73,6 @@
 # 407963104 Pixelmator (3.6)
 # 693112260 Sim Daltonism (2.0)
 # 692867256 Simplenote (1.1.7)
-# 931134707 Wire (2.10)
 #
 # MACOS_APPS=\
 # 409203825 \
@@ -85,7 +84,6 @@
 # 463362050 \
 # 411643860 \
 # 692867256 \
-# 931134707 \
 # 693112260 \
 # 972028355 \
 # 407963104
@@ -105,34 +103,6 @@
 # [ -f /usr/local/bin/gem ] gem install $GEMS
 
 # [ -d ~/.oh-my-zsh ] || curl -L https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh | sh
-
-# Setup root Symlinks
-[ -h ~/.aliases ] && unlink ~/.aliases
-[ -f ~/src/dotfiles/.aliases ] && ln -s ~/src/dotfiles/.aliases ~/.aliases
-
-[ -h ~/.editorconfig ] && unlink ~/.editorconfig
-[ -f ~/src/dotfiles/.editorconfig ] && ln -s ~/src/dotfiles/.editorconfig ~/.editorconfig
-
-[ -h ~/.gitconfig ] && unlink ~/.gitconfig
-[ -f ~/src/dotfiles/.gitconfig ] && ln -s ~/src/dotfiles/.gitconfig ~/.gitconfig
-
-[ -h ~/.gitignore_global ] && unlink ~/.gitignore_global
-[ -f ~/src/dotfiles/.gitignore_global ] && ln -s ~/src/dotfiles/.gitignore_global ~/.gitignore_global
-
-[ -h ~/.eslintrc ] && unlink ~/.eslintrc
-[ -f ~/src/dotfiles/.eslintrc ] && ln -s ~/src/dotfiles/.eslintrc ~/.eslintrc
-
-[ -h ~/.stylelintrc ] && unlink ~/.stylelintrc
-[ -f ~/src/dotfiles/.stylelintrc ] && ln -s ~/src/dotfiles/.stylelintrc ~/.stylelintrc
-
-[ -h ~/.zshrc ] && unlink ~/.zshrc
-[ -f ~/src/dotfiles/.zshrc ] && ln -s ~/src/dotfiles/.zshrc ~/.zshrc
-
-[ -h ~/.hyper.js ] && unlink ~/.hyper.js
-[ -f ~/src/dotfiles/.hyperterm.js ] && ln -s ~/src/dotfiles/.hyperterm.js ~/.hyper.js
-
-[ -h /usr/local/bin/updateSystem ] && unlink /usr/local/bin/updateSystem
-[ -d ~/src/dotfiles/bin ] && ln -s ~/src/dotfiles/bin/updateSystem /usr/local/bin/updateSystem
 
 # Setup VSCode
 # CODE_PACKAGES=\
@@ -154,3 +124,11 @@
 # xabikos.ReactSnippets
 # zhuangtongfa.Material-theme
 # [ -f /usr/local/bin/code ] code --install-extension $CODE_PACKAGES
+
+# Setup root symlinks
+echo $fg[red]Setup root symlinks...$reset_color
+for f in $(ls -A ../symlinks)
+do
+	[ -h ~/$f ] && unlink ~/$f
+	[ -f ~/src/dotfiles/symlinks/$f ] && ln -s ~/src/dotfiles/symlinks/$f ~/$f
+done
