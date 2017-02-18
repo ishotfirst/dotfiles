@@ -14,7 +14,9 @@ echo $fg[green]Homebrew...$reset_color
 # [ -f /usr/local/bin/brew ] || ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 
 # BREWS=\
+# asciinema \
 # colordiff \
+# excercism \
 # git \
 # mas \
 # nvm \
@@ -122,15 +124,23 @@ echo $fg[green]VSCode extensions...$reset_color
 # HookyQR.minify
 # Shan.code-settings-sync
 # Zignd.html-css-class-completion
+# abadi199.elm-format
 # abusaidm.html-snippets
 # capaj.vscode-exports-autocomplete
 # christian-kohler.npm-intellisense
 # christian-kohler.path-intellisense
 # dbaeumer.vscode-eslint
 # donjayamanne.githistory
+# donjayamanne.python
+# freebroccolo.reasonml
+# hackwaly.ocaml
 # joelday.docthis
+# kalitaalexey.vscode-rust
+# lukehoban.Go
 # naumovs.color-highlight
+# rebornix.scheme
 # robertohuertasm.vscode-icons
+# sbrink.elm
 # xabikos.JavaScriptSnippets
 # xabikos.ReactSnippets
 # zhuangtongfa.Material-theme
