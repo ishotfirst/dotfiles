@@ -48,7 +48,3 @@ export NVM_DIR=$HOME/.nvm
 source $(brew --prefix nvm)/nvm.sh
 
 export PATH="$HOME/.yarn/bin:$PATH"
-
-# Go stuff
-export PATH=/usr/local/go/bin:$PATH
-export GOPATH=$HOME/src/go
