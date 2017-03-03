@@ -102,10 +102,8 @@ echo $fg[green]Node versions...$reset_color
 # Node
 echo $fg[green]Node modules...$reset_color
 # NPM_MODULES=\
-# bower \
 # pure-prompt \
 # eslint \
-# polymer-cli
 # [ -d $NVM_PATH/versions/node/$(nvm current)/lib/node_modules ] npm install -g $NPM_MODULES
 
 # Gems
@@ -124,23 +122,15 @@ echo $fg[green]VSCode extensions...$reset_color
 # HookyQR.minify
 # Shan.code-settings-sync
 # Zignd.html-css-class-completion
-# abadi199.elm-format
 # abusaidm.html-snippets
 # capaj.vscode-exports-autocomplete
 # christian-kohler.npm-intellisense
 # christian-kohler.path-intellisense
 # dbaeumer.vscode-eslint
 # donjayamanne.githistory
-# donjayamanne.python
-# freebroccolo.reasonml
-# hackwaly.ocaml
 # joelday.docthis
-# kalitaalexey.vscode-rust
-# lukehoban.Go
 # naumovs.color-highlight
-# rebornix.scheme
 # robertohuertasm.vscode-icons
-# sbrink.elm
 # xabikos.JavaScriptSnippets
 # xabikos.ReactSnippets
 # zhuangtongfa.Material-theme
