@@ -117,22 +117,22 @@ echo $fg[green]Ruby gems...$reset_color
 # Setup VSCode
 echo $fg[green]VSCode extensions...$reset_color
 # CODE_PACKAGES=\
-# EditorConfig.EditorConfig
-# HookyQR.beautify
-# HookyQR.minify
-# Shan.code-settings-sync
-# Zignd.html-css-class-completion
-# abusaidm.html-snippets
-# capaj.vscode-exports-autocomplete
-# christian-kohler.npm-intellisense
-# christian-kohler.path-intellisense
-# dbaeumer.vscode-eslint
-# donjayamanne.githistory
-# joelday.docthis
-# naumovs.color-highlight
-# robertohuertasm.vscode-icons
-# xabikos.JavaScriptSnippets
-# xabikos.ReactSnippets
+# EditorConfig.EditorConfig \
+# HookyQR.beautify \
+# HookyQR.minify \
+# Shan.code-settings-sync \
+# Zignd.html-css-class-completion \
+# abusaidm.html-snippets \
+# capaj.vscode-exports-autocomplete \
+# christian-kohler.npm-intellisense \
+# christian-kohler.path-intellisense \
+# dbaeumer.vscode-eslint \
+# donjayamanne.githistory \
+# joelday.docthis \
+# naumovs.color-highlight \
+# robertohuertasm.vscode-icons \
+# xabikos.JavaScriptSnippets \
+# xabikos.ReactSnippets \
 # zhuangtongfa.Material-theme
 # [ -f /usr/local/bin/code ] code --install-extension $CODE_PACKAGES
 
