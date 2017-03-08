@@ -51,3 +51,4 @@ export PATH="$HOME/.yarn/bin:$PATH"
 
 # InVision
 LAUNCH_DARKLY_USER=jasonlemoine@invisionapp.com
+source $HOME/src/InVision/InVision_Docker/scripts-native/invision.sh
