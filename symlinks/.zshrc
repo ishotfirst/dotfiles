@@ -35,7 +35,7 @@ plugins=(git)
 source $ZSH/oh-my-zsh.sh
 
 # Customize to your needs...
-export PATH=/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin
+export PATH=$HOME/src/dotfiles/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin
 
 source $HOME/.aliases
 
@@ -48,3 +48,6 @@ export NVM_DIR=$HOME/.nvm
 source $(brew --prefix nvm)/nvm.sh
 
 export PATH="$HOME/.yarn/bin:$PATH"
+
+# InVision
+LAUNCH_DARKLY_USER=jasonlemoine@invisionapp.com
