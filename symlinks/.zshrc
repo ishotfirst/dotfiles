@@ -50,4 +50,4 @@ source $(brew --prefix nvm)/nvm.sh
 export PATH="$HOME/.yarn/bin:$PATH"
 
 # InVision
-source $HOME/src/InVision/InVision_Docker/scripts-native/invision.sh
+[ -d $HOME/src/InVision/InVision_Docker ] && source $HOME/src/InVision/InVision_Docker/scripts-native/invision.sh
