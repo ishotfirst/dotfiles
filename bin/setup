@@ -5,8 +5,13 @@ autoload -U colors && colors
 # Install common software
 echo $fg[red]Install common software...$reset_color
 
+# TODO:
+# Some things are personal only, some things are work.
+# Should split this up into common, then "extend".
+
 # PIP
 echo $fg[green]Python packages...$reset_color
+# TODO: Need to install PIP first?
 # pip install Pygments
 
 # Homebrew
