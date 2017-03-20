@@ -1,6 +1,5 @@
 [user]
   name = Jason LeMoine
-  email = github@lemoine.io
 
 [core]
   excludesfile = /Users/jasonl/.gitignore_global

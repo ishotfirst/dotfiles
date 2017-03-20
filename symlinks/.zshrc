@@ -50,4 +50,4 @@ source $(brew --prefix nvm)/nvm.sh
 export PATH="$HOME/.yarn/bin:$PATH"
 
 # InVision
-[ -f $HOME/in-bootstrap.sh ] && $HOME/in-bootstrap.sh
+[ -f $HOME/in-bootstrap.sh ] && source $HOME/in-bootstrap.sh
