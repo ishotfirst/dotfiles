@@ -9,12 +9,12 @@ indent_size = 2
 insert_final_newline = true
 trim_trailing_whitespace = true
 
-[*.{html,css,js,yml}]
+[*.{html,css,js,yml,yaml}]
 indent_style = spaces
 
 [*.py]
 indent_style = spaces
 indent_size = 4
 
-[*.yml]
+[*.{yml,yaml}]
 insert_final_newline = false
