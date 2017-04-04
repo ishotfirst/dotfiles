@@ -39,3 +39,4 @@ alias grh='git rh'
 
 # npm
 alias npmh='npm config set registry https://registry.npmjs.org'
+alias npmw='npm config set registry http://npm.invision.works'
