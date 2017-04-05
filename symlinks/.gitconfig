@@ -1,5 +1,6 @@
 [user]
   name = Jason LeMoine
+  email = jasonlemoine@invisionapp.com
 
 [core]
   excludesfile = /Users/jasonl/.gitignore_global

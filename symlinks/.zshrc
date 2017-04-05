@@ -48,6 +48,8 @@ export NVM_DIR=$HOME/.nvm
 source $(brew --prefix nvm)/nvm.sh
 
 export PATH="$HOME/.yarn/bin:$PATH"
+export GOPATH="$HOME/src/go"
+export PATH="/usr/local/go/bin:$PATH"
 
 # InVision
 if [[ -d $HOME/src/InVision/InVision_Docker ]]
