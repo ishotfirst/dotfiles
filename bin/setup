@@ -23,10 +23,10 @@ echo $fg[green]Homebrew...$reset_color
 # colordiff \
 # excercism \
 # git \
+# homeshick \
 # mas \
 # nvm \
 # openssl \
-# ruby \
 # trash \
 # zsh
 # [ -f /usr/local/bin/brew ] brew install $BREWS
@@ -56,6 +56,7 @@ echo $fg[green]Homebrew Casks...$reset_color
 # slack \
 # spotify \
 # superduper \
+# torbrowser \
 # visual-studio-code
 # [ -f /usr/local/bin/brew-cask ] brew cask install $CASKS
 #
@@ -63,7 +64,7 @@ echo $fg[green]Homebrew Casks...$reset_color
 # https://github.com/caskroom/homebrew-cask/blob/master/CONTRIBUTING.md#adding-a-cask
 #
 # google-chrome-canary
-# firefox-developer-edition
+# firefox-nightly
 # noteburner-m4v-converter-plus
 # now
 # safari-technology-preview
@@ -74,7 +75,6 @@ echo $fg[green]macOS apps...$reset_color
 # 443987910 1Password (6.3.5)
 # 417375580 BetterSnapTool (1.7)
 # 411643860 DaisyDisk (4.3)
-# 498672703 Droplr (4.6.4)
 # 587512244 Kaleidoscope (2.1.0)
 # 972028355 Micro Snitch (1.2)
 # 409203825 Numbers (4.0.5)
@@ -82,18 +82,15 @@ echo $fg[green]macOS apps...$reset_color
 # 463362050 PhotoSweeper (2.2.6)
 # 407963104 Pixelmator (3.6)
 # 693112260 Sim Daltonism (2.0)
-# 692867256 Simplenote (1.1.7)
 #
 # MACOS_APPS=\
 # 409203825 \
 # 443987910 \
 # 417375580 \
-# 498672703 \
 # 409201541 \
 # 587512244 \
 # 463362050 \
 # 411643860 \
-# 692867256 \
 # 693112260 \
 # 972028355 \
 # 407963104
@@ -112,7 +109,7 @@ echo $fg[green]Node modules...$reset_color
 # [ -d $NVM_PATH/versions/node/$(nvm current)/lib/node_modules ] npm install -g $NPM_MODULES
 
 # Gems
-echo $fg[green]Ruby gems...$reset_color
+# echo $fg[green]Ruby gems...$reset_color
 # GEMS=\
 # jekyll
 # [ -f /usr/local/bin/gem ] gem install $GEMS
@@ -125,6 +122,7 @@ echo $fg[green]VSCode extensions...$reset_color
 # EditorConfig.EditorConfig \
 # HookyQR.beautify \
 # HookyQR.minify \
+# RobinMalfait.prettier-eslint-vscode \
 # Shan.code-settings-sync \
 # Zignd.html-css-class-completion \
 # abusaidm.html-snippets \
@@ -134,11 +132,13 @@ echo $fg[green]VSCode extensions...$reset_color
 # dbaeumer.vscode-eslint \
 # donjayamanne.githistory \
 # joelday.docthis \
+# lukehoban.Go \
 # naumovs.color-highlight \
 # robertohuertasm.vscode-icons \
+# waderyan.gitblame \
 # xabikos.JavaScriptSnippets \
-# xabikos.ReactSnippets \
-# zhuangtongfa.Material-theme
+# xabikos.ReactSnippets
+zhuangtongfa.Material-theme
 # [ -f /usr/local/bin/code ] code --install-extension $CODE_PACKAGES
 
 # Setup root symlinks

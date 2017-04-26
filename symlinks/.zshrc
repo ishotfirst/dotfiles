@@ -51,6 +51,9 @@ export PATH="$HOME/.yarn/bin:$PATH"
 export GOPATH="$HOME/src/go"
 export PATH="/usr/local/go/bin:$PATH"
 
+export HOMESHICK_DIR=/usr/local/opt/homeshick
+source "/usr/local/opt/homeshick/homeshick.sh"
+
 # InVision
 if [[ -d $HOME/src/InVision/InVision_Docker ]]
 then
