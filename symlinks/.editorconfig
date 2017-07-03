@@ -16,5 +16,5 @@ indent_style = spaces
 indent_style = spaces
 indent_size = 4
 
-[*.{yml,yaml,yml.template}]
+[*.{txt,yml,yaml,yml.template}]
 insert_final_newline = false
