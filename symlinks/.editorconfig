@@ -4,17 +4,10 @@ root = true
 [*]
 charset = utf-8
 end_of_line = LF
-indent_style = tab
+indent_style = spaces
 indent_size = 2
 insert_final_newline = true
 trim_trailing_whitespace = true
-
-[*.{html,css,js,yml,yaml,yml.template}]
-indent_style = spaces
-
-[*.py]
-indent_style = spaces
-indent_size = 4
 
 [*.{txt,yml,yaml,yml.template}]
 insert_final_newline = false
