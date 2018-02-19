@@ -3,7 +3,7 @@
 autoload -U colors && colors
 echo $fg[red]Updating system...$reset_color
 echo $fg[green]Updating Homebrew...$reset_color
-brew update && brew cask update && brew upgrade && brew cleanup && brew cask cleanup
+brew update && brew upgrade && brew cleanup && brew cask cleanup
 echo $fg[green]Updating npm...$reset_color
 npm -g update
 # echo $fg[green]Updating Ruby gems...$reset_color
